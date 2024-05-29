@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: cotoris;
+  src: url(../src//assets//fonts/CotorisBold.ttf);
+}
+.cotoris {
+  font-family: cotoris;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../src//assets//fonts/Poppins-Medium.ttf);
+}
+.poppins {
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: kenyanCoffee;
+  src: url(../src//assets//fonts/kenyan\ coffee\ rg.otf);
+}
+.kenyanCoffee {
+  font-family: kenyanCoffee;
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url(../src//assets//fonts/Poppins-Regular.ttf);
+}
+.poppinsRegular {
+  font-family: poppinsRegular;
+}
+
+.change_content:after {
+  content: "";
+  animation: changeText 10s infinite linear;
+  color: #fff;
+}
+@keyframes changeText {
+  0% {
+    content: "MERN Stack Developer";
+  }
+  40% {
+    content: "Frontend Developer";
+  }
+  70% {
+    content: "Backend Developer";
+  }
+  100% {
+    content: "Full Stack Developer";
+  }
+}
+
+.name-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: revealName 5s linear infinite alternate;
+}
+
+@keyframes revealName {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  40% {
+    width: 30%;
+  }
+  60% {
+    width: 60%;
+  }
+  80% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
