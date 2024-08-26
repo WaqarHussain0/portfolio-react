@@ -37,6 +37,7 @@ const Contact: React.FC = () => {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<IFormData>({
     defaultValues: {
       name: "",
@@ -61,6 +62,7 @@ const Contact: React.FC = () => {
         process.env.REACT_APP_USER_ID as string
       );
       toast.success("Thanks for contacting!");
+      reset();
     } catch (error) {
       console.error("Failed to send email.", error);
     }
@@ -77,7 +79,10 @@ const Contact: React.FC = () => {
       />
       <Row className="mb-4 px-2 md:px-0 w-full md:w-[90%] flex-col justify-between items-center  gap-4 ">
         <Row className=" items-center gap-3 text-[#291c3a]">
-          <MdConnectWithoutContact size={25} className="animate-bounce text-[#8121d0] " />
+          <MdConnectWithoutContact
+            size={25}
+            className="animate-bounce text-[#8121d0] "
+          />
           <Row className="flex-col gap-2 items-start md:items-center">
             <h2 className="kenyanCoffee  font-semibold uppercase text-[26px] md:text-[42px]  border-b border-[#8121d0] text-start">
               Contact
@@ -121,7 +126,14 @@ const Contact: React.FC = () => {
                 name="email"
                 placeHolder="Enter your email"
                 errors={errors}
-                rules={{ required: "Email is required" }}
+                rules={{
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Enter a valid email address",
+                  },
+                }}
+                type="email"
               />
 
               <Controller

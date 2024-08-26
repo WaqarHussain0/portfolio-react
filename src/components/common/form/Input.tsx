@@ -10,6 +10,7 @@ interface IProps {
   control?: any;
   rules?: any;
   errors?: any;
+  type?: any;
 }
 const Input: React.FC<IProps> = ({
   name,
@@ -18,6 +19,7 @@ const Input: React.FC<IProps> = ({
   control,
   rules,
   errors,
+  type,
   ...restProps
 }) => {
   return (
@@ -32,6 +34,7 @@ const Input: React.FC<IProps> = ({
             name={name}
             className={`w-full outline-none px-2 md:px-4 py-2 rounded-sm poppinsRegular text-[14px] md:text-[16px] ${className}`}
             placeholder={placeHolder}
+            type={type}
             {...restProps}
           />
         )}
