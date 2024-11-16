@@ -11,6 +11,10 @@ import Input from "./common/form/Input";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
+import Heading from "./common/heading";
+import Description from "./common/heading/Description";
+import AnimatedIcon from "./AnimatedIcon";
+import SubHeading from "./common/heading/SubHeading";
 
 interface IconData {
   name: string;
@@ -79,17 +83,12 @@ const Contact: React.FC = () => {
       />
       <Row className="mb-4 px-2 md:px-0 w-full md:w-[90%] flex-col justify-between items-center  gap-4 ">
         <Row className=" items-center gap-3 text-[#291c3a]">
-          <MdConnectWithoutContact
-            size={25}
-            className="animate-bounce text-[#8121d0] "
-          />
+          <AnimatedIcon Icon={MdConnectWithoutContact} />
+
           <Row className="flex-col gap-2 items-start md:items-center">
-            <h2 className="kenyanCoffee  font-semibold uppercase text-[26px] md:text-[42px]  border-b border-[#8121d0] text-start">
-              Contact
-            </h2>
-            <p className="poppinsRegular text-[14px] md:text-[16px] ">
-              Let's discuss on something cool together
-            </p>
+            <Heading title="Contact" />
+
+            <Description title=" Let's discuss on something cool together" />
           </Row>
         </Row>
 
@@ -101,17 +100,16 @@ const Contact: React.FC = () => {
                   <div className="flex justify-center items-center w-[30px] h-[30px] md:w-[40px] md:h-[40px] rounded-sm shadow-md border-y bg-white">
                     <val.icon className="h-[20px] w-[20px] md:h-[25px] md:w-[25px] text-[#8121d0]" />
                   </div>
+
                   <Row className="flex-col">
-                    <p className="poppinsRegular text-[11px] md:text-[14px]">
-                      {val.name}
-                    </p>
-                    <h2 className="poppins text-[13px] md:text-[16px]">
-                      {val.details}
-                    </h2>
+                    <SubHeading title={val.name} />
+
+                    <Description title={val.details} />
                   </Row>
                 </Row>
               ))}
             </Row>
+
             <Row className="w-full md:w-[60%] flex-col gap-3  items-start ">
               <Input
                 name="name"

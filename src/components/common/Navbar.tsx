@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Row from "./Row";
 import { BiMessageDots } from "react-icons/bi";
+import AnimatedIcon from "../AnimatedIcon";
 
 const Navbar = () => {
   const menu = [
@@ -13,7 +14,10 @@ const Navbar = () => {
   const [selectedMenu, setSelectedMenu] = useState("Home");
 
   return (
-    <Row id="/" className="w-full justify-center items-center py-4 md:py-6 bg-[#291c3a]">
+    <Row
+      id="/"
+      className="w-full justify-center items-center py-4 md:py-6 bg-[#291c3a]"
+    >
       <Row className="px-4 md:px-0 w-full md:w-[90%] justify-between md:justify-center md:gap-28 items-center">
         <Row className="gap-2 md:gap-6">
           {menu.map((item, index) => (
@@ -38,7 +42,8 @@ const Navbar = () => {
           >
             Hire Me
           </a>
-          <BiMessageDots size={18} className="animate-bounce" />
+
+          <AnimatedIcon Icon={BiMessageDots} iconSize={18} />
         </Row>
       </Row>
     </Row>

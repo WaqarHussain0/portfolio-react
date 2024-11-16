@@ -7,7 +7,7 @@
   src: url(../src//assets//fonts/CotorisBold.ttf);
 }
 .cotoris {
-  font-family: cotoris;
+  font-family: cotoris !important;
 }
 
 @font-face {
