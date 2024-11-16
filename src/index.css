@@ -34,30 +34,10 @@
   font-family: poppinsRegular;
 }
 
-.change_content:after {
-  content: "";
-  animation: changeText 10s infinite linear;
-  color: #fff;
-}
-@keyframes changeText {
-  0% {
-    content: "MERN Stack Developer";
-  }
-  40% {
-    content: "Frontend Developer";
-  }
-  70% {
-    content: "Backend Developer";
-  }
-  100% {
-    content: "Full Stack Developer";
-  }
-}
-
 .name-animation {
   overflow: hidden;
   white-space: nowrap;
-  animation: revealName 5s linear infinite alternate;
+  animation: revealName 2s linear infinite alternate;
 }
 
 @keyframes revealName {

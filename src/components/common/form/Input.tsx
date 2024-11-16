@@ -32,7 +32,7 @@ const Input: React.FC<IProps> = ({
           <input
             {...field}
             name={name}
-            className={`w-full outline-none px-2 md:px-4 py-2 rounded-sm poppinsRegular text-[14px] md:text-[16px] ${className}`}
+            className={`w-full outline-none p-2 rounded-sm poppinsRegular text-[12px] md:text-[14px] ${className}`}
             placeholder={placeHolder}
             type={type}
             {...restProps}
@@ -40,7 +40,7 @@ const Input: React.FC<IProps> = ({
         )}
       />
       {errors[name] && (
-        <p className="text-red-600  mt-[4px] poppinsRegular text-[14px] md:text-[16px] ">
+        <p className="text-red-600 mt-[4px] poppinsRegular text-[12px] md:text-[14px] ">
           {errors[name].message}
         </p>
       )}

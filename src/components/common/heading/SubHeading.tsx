@@ -4,9 +4,10 @@ interface ISubHeading {
 }
 
 const SubHeading: React.FC<ISubHeading> = ({ title, className }) => {
-
   return (
-    <h2 className={`poppins text-[18px] font-medium line-clamp-1 ${className}`}>
+    <h2
+      className={`poppins text-[13px] md:text-[18px]  font-medium line-clamp-1   ${className}`}
+    >
       {title}
     </h2>
   );

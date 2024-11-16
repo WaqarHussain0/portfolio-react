@@ -4,7 +4,7 @@ import exd_logo from "../assets/imgs/exd.png";
 
 const ExperienceData = [
   {
-    designation: "Associate Software Engineer",
+    designation: "Associate MERN Dev",
     companyName: "PieCyfer",
     location: "Lahore",
     startDate: "June 24",
@@ -17,7 +17,7 @@ const ExperienceData = [
     companyName: "PieCyfer",
     location: "Lahore",
     startDate: "Mar",
-    endDate: "May 24",
+    endDate: "May, 24",
     imgSrc: piecyferLogo,
     websiteLink: "https://www.piecyfer.com/",
   },
@@ -26,7 +26,7 @@ const ExperienceData = [
     companyName: "66 Loop Technologies",
     location: "Lahore",
     startDate: "Sep",
-    endDate: "Oct 23",
+    endDate: "Oct, 23",
     imgSrc: loop_tech_logo,
     websiteLink: "https://66loop.com/",
   },

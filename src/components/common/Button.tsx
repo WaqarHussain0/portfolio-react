@@ -9,7 +9,7 @@ interface ButtonProps {
 const Button: FC<ButtonProps> = ({ btnTitle, onClick, className }) => {
   return (
     <button
-      className={`bg-[#8121d0] py-2  text-white text-center rounded-full poppins text-[14px] md:text-[16px] ${className}`}
+      className={`bg-[#8121d0] py-1 md:py-2  text-white text-center rounded-full poppins text-[14px] md:text-[16px] ${className}`}
       onClick={onClick}
     >
       {btnTitle}

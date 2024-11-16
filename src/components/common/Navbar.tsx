@@ -24,7 +24,7 @@ const Navbar = () => {
             <a
               key={index}
               href={item.sectionId}
-              className={`text-center poppinsRegular text-[12px] md:text-[14px] rounded-sm cursor-pointer py-1 transition duration-200 ease-in-out ${
+              className={`text-center poppinsRegular text-[11px] md:text-[14px] rounded-sm cursor-pointer py-1 transition duration-200 ease-in-out ${
                 selectedMenu === item.page
                   ? "bg-[#8121d0] text-white bg-opacity-25 px-2 md:px-4"
                   : "text-[#fff]"
@@ -35,10 +35,10 @@ const Navbar = () => {
             </a>
           ))}
         </Row>
-        <Row className="bg-white cursor-pointer px-2 md:pl-6 md:pr-8 py-1 md:py-2 rounded-full items-center gap-0 md:gap-3 text-[#291c3a]">
+        <Row className="bg-white cursor-pointer px-2 md:pl-6 md:pr-8 py-1 md:py-2 rounded-full items-center gap-1 md:gap-3 text-[#291c3a]">
           <a
             href="#contact"
-            className="poppinsRegular text-[12px] md:text-[18px]"
+            className="poppinsRegular text-[11px] md:text-[18px]"
           >
             Hire Me
           </a>

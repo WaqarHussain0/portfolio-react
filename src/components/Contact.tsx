@@ -142,19 +142,19 @@ const Contact: React.FC = () => {
                   <textarea
                     {...field}
                     name="message"
-                    className="w-full outline-none  h-[150px] px-2 md:px-4 py-2 rounded-sm resize-none poppinsRegular text-[14px] md:text-[16px]"
+                    className="w-full outline-none  h-[150px] px-2 md:px-4 py-2 rounded-sm resize-none poppinsRegular text-[12px] md:text-[14px]"
                     placeholder="Enter your message here"
                   />
                 )}
               />
               {errors.message && (
-                <p className="text-red-600 mt-[-10px] md:mt-[-12px] poppinsRegular text-[14px] md:text-[16px] ">
+                <p className="text-red-600 mt-[-10px] md:mt-[-12px] poppinsRegular text-[12px] md:text-[14px] ">
                   {errors.message.message}
                 </p>
               )}
               <Button
                 btnTitle="Send"
-                className="w-[90px] md:w-[120px] "
+                className="w-[80px] md:w-[120px] "
                 onClick={handleSubmit(onSubmit)}
               />
             </Row>

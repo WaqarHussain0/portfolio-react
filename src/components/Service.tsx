@@ -35,7 +35,7 @@ const Service: React.FC = () => {
           {servicesData.map((service, index) => (
             <Row
               key={index}
-              className="flex-col gap-2 shadow-md border items-center rounded-md w-full md:w-[32%] bg-white mb-3 md:mb-4 p-6"
+              className=" flex-col gap-2 shadow-md border items-center rounded-md w-full md:w-[32%] bg-white mb-3 md:mb-4 p-4 md:p-6"
             >
               <Row className="w-full items-center justify-between">
                 <SubHeading title={service.heading} />
@@ -49,7 +49,7 @@ const Service: React.FC = () => {
                 <Row key={idx} className="items-center w-full">
                   <TbPoint size={25} className="text-[#291c3a]" />
 
-                  <Description title={point} />
+                  <Description title={point}  className="line-clamp-2 text-start"/>
                 </Row>
               ))}
             </Row>

@@ -35,13 +35,13 @@ const Skill = () => {
             skillsData.map((val, index) => (
               <Row
                 key={index}
-                className=" flex-col rounded-md mb-2 shadow-md border-x  bg-white w-[33%] md:w-[18%]  h-[80px] md:h-[140px]  justify-center items-center gap-2  "
+                className=" flex-col rounded-md mb-2 shadow-md border-x  bg-white w-[32%] md:w-[18%]  h-[70px] md:h-[140px]  justify-center items-center gap-2  "
               >
                 <SubHeading
                   title={val.name}
                   className="text-[14px] md:text-[20px] text-center text-[#291c3a] line-clamp-2"
                 />
-                <val.icon className="h-[35px] w-[35px] md:h-[50px] md:w-[50px] object-contain text-[#8121d0] " />
+                <val.icon className="h-[25px] w-[25px]  md:h-[50px] md:w-[50px] object-contain text-[#8121d0] " />
               </Row>
             ))}
         </Row>

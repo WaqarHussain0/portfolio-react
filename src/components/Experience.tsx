@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
   return (
     <Row
       id="about"
-      className="w-full md:w-[90%] justify-center py-4 bg-[#e1ebed]"
+      className="w-full md:w-[90%] justify-center pt-2 pb-4 bg-[#e1ebed]"
     >
       <Row className="px-2 md:px-0 w-full flex-col justify-between items-center gap-4">
         <Row className="items-center gap-3 text-[#291c3a]">
@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
             expData.map((job, index) => (
               <Row
                 key={index}
-                className="flex-col shadow-md border rounded-md w-full bg-white py-5 px-2 mb-3 md:p-5"
+                className="  flex-col shadow-md border rounded-md w-full bg-white py-4 px-2 md:px-0 mb-2 "
               >
                 <Row className="w-full gap-2 md:gap-4 justify-center items-center">
                   <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px]">
@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
                     />
                   </div>
 
-                  <Row className="justify-between items-center w-[90%]">
+                  <Row className="justify-between items-center w-[90%] ">
                     <Row className="flex-col">
                       <SubHeading title={job.designation} />
 
@@ -57,7 +57,7 @@ const Experience: React.FC = () => {
                         href={job.websiteLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="line-clamp-1 poppinsRegular text-[12px] md:text-[16px]"
+                        className="line-clamp-1 poppinsRegular text-[11px] md:text-[16px]"
                       >
                         {job.companyName}
                       </a>
