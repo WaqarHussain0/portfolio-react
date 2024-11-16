@@ -20,7 +20,7 @@ const Banner = () => {
             />
 
             <Description
-              title=" MERN Stack Specialist | Crafting Scalable & High-Performance Web Solutions"
+              title="MERN Stack Specialist | Crafting Scalable & High-Performance Web Solutions"
               className="text-[#e1ebed] line-clamp-3 text-start text-[10px] md:text-[16px] "
             />
           </Row>
