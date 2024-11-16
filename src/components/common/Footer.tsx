@@ -1,8 +1,7 @@
 import Row from "./Row";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareUpwork, FaGithub } from "react-icons/fa6";
-import { TbBrandFiverr } from "react-icons/tb";
-import { FaMedium } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+
 import Description from "./heading/Description";
 interface ISocialLink {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>> | string;
@@ -14,9 +13,7 @@ const data: ISocialLink[] = [
     icon: FaLinkedin,
     link: "https://www.linkedin.com/in/waqar-hussain-9b49101b3/",
   },
-  { icon: FaMedium, link: "https://medium.com/@waqar105lgu.edu" },
-  { icon: TbBrandFiverr, link: "https://www.fiverr.com/waqarhussain105" },
-  { icon: FaSquareUpwork, link: "https://www.upwork.com/" },
+
   { icon: FaGithub, link: "https://github.com/WaqarHussain0" },
 ];
 
