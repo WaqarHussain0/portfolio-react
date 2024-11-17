@@ -8,7 +8,7 @@ const AnimatedReact = () => {
         <DiReact className="animate-spin text-white text-opacity-45 w-[15px] h-[15px] md:w-[30px] md:h-[30px]" />
       </div>
 
-      <div className="border-l-[5px] md:border-l-[8px] border-double  border-[#8121d0] h-[70px] md:h-[150px] " />
+      <div className="border-l-[5px] md:border-l-[8px] border-double  border-[#8121d0] h-[100px] md:h-[160px] lg:h-[140px] " />
     </Row>
   );
 };

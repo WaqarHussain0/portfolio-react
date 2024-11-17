@@ -12,6 +12,7 @@ interface IProps {
   errors?: any;
   type?: any;
 }
+
 const Input: React.FC<IProps> = ({
   name,
   className,
@@ -39,6 +40,7 @@ const Input: React.FC<IProps> = ({
           />
         )}
       />
+
       {errors[name] && (
         <p className="text-red-600 mt-[4px] poppinsRegular text-[12px] md:text-[14px] ">
           {errors[name].message}

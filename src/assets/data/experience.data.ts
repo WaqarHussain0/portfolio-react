@@ -1,11 +1,12 @@
-import piecyferLogo from "../assets/imgs/piecyfer.png";
-import loop_tech_logo from "../assets/imgs/66loop_technologies_logo.jpg";
-import exd_logo from "../assets/imgs/exd.png";
+import piecyferLogo from "../imgs/piecyfer.png";
+import loop_tech_logo from "../imgs/66loop_technologies_logo.jpg";
+import exd_logo from "../imgs/exd.png";
+import { IJob } from "../../components/Experience";
 
-const ExperienceData = [
+const ExperienceData: IJob[] = [
   {
-    designation: "Associate MERN Dev",
-    companyName: "PieCyfer",
+    designation: "Associate MERN Dev.",
+    companyName: "PieCyfer ↗",
     location: "Lahore",
     startDate: "June 24",
     endDate: null,
@@ -13,8 +14,8 @@ const ExperienceData = [
     websiteLink: "https://www.piecyfer.com/",
   },
   {
-    designation: "Intern MERN Stack Dev",
-    companyName: "PieCyfer",
+    designation: "Intern MERN Stack Dev.",
+    companyName: "PieCyfer ↗",
     location: "Lahore",
     startDate: "Mar",
     endDate: "May, 24",
@@ -22,8 +23,8 @@ const ExperienceData = [
     websiteLink: "https://www.piecyfer.com/",
   },
   {
-    designation: "Junior React Dev",
-    companyName: "66 Loop Technologies",
+    designation: "Junior React Dev.",
+    companyName: "66 Loop Technologies ↗",
     location: "Lahore",
     startDate: "Sep",
     endDate: "Oct, 23",
@@ -32,7 +33,7 @@ const ExperienceData = [
   },
   {
     designation: "MERN Bootcamp",
-    companyName: "Excellence Delivered Exd (Pvt.) Ltd",
+    companyName: "Excellence Delivered Exd (Pvt.) Ltd ↗",
     location: "Lahore",
     startDate: "2023",
     endDate: "2023",

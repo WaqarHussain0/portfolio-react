@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Row from "./Row";
 import { BiMessageDots } from "react-icons/bi";
-import AnimatedIcon from "../AnimatedIcon";
+import IconButton from "./button/Icon.button";
 
 const Navbar = () => {
   const menu = [
@@ -18,7 +18,7 @@ const Navbar = () => {
       id="/"
       className="w-full justify-center items-center py-4 md:py-6 bg-[#291c3a]"
     >
-      <Row className="px-4 md:px-0 w-full md:w-[90%] justify-between md:justify-center md:gap-28 items-center">
+      <Row className="px-4 md:px-0 w-full md:w-[93%] justify-between md:justify-center md:gap-28 items-center">
         <Row className="gap-2 md:gap-6">
           {menu.map((item, index) => (
             <a
@@ -35,16 +35,8 @@ const Navbar = () => {
             </a>
           ))}
         </Row>
-        <Row className="bg-white cursor-pointer px-2 md:pl-6 md:pr-8 py-1 md:py-2 rounded-full items-center gap-1 md:gap-3 text-[#291c3a]">
-          <a
-            href="#contact"
-            className="poppinsRegular text-[11px] md:text-[18px]"
-          >
-            Hire Me
-          </a>
 
-          <AnimatedIcon Icon={BiMessageDots} iconSize={18} />
-        </Row>
+        <IconButton title="Hire Me" linkTo="#contact" icon={BiMessageDots} className="bg-white text-[#291c3a] " />
       </Row>
     </Row>
   );

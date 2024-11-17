@@ -8,20 +8,23 @@ const Banner = () => {
   return (
     <Row className="w-full justify-center  max:h-[27vh] md:h-[70vh]  bg-[#291c3a] relative overflow-hidden">
       <Row className="w-[90%]   justify-between items-center ">
-        <Row className=" w-[65%] md:w-[60%] items-end pl-2 md:pl-3 gap-1 ">
+        <Row className=" w-[65%] md:w-[60%] items-end  pl-2 md:pl-3 gap-1 ">
           <AnimatedReact />
 
           <Row className="flex-col ">
-            <Description title=" Hello 👋, I'm" className="text-[#e1ebed] " />
+            <Description
+              title=" Hello 👋, I'm"
+              className="text-[#e1ebed] text-[10px] "
+            />
 
             <SubHeading
               title="Waqar Hussain"
-              className="cotoris !important text-[#8121d0] text-[22px] md:text-[60px] name-animation"
+              className="cotoris !important text-[#8121d0] text-[22px] md:text-[50px] lg:text-[60px] name-animation"
             />
 
             <Description
               title="MERN Stack Specialist | Crafting Scalable & High-Performance Web Solutions"
-              className="text-[#e1ebed] line-clamp-3 text-start text-[10px] md:text-[16px] "
+              className="text-[#e1ebed] line-clamp-4 text-start text-[10px] md:text-[16px] "
             />
           </Row>
         </Row>
@@ -31,6 +34,7 @@ const Banner = () => {
             src={waqarPic}
             alt="Profile Pic"
             className="w-full h-full object-contain "
+            loading="lazy"
           />
         </div>
       </Row>

@@ -9,7 +9,7 @@ import Row from "../components/common/Row";
 
 const Home = () => {
   return (
-    <Row className="w-full flex-col items-center bg-[#e1ebed] ">
+    <Row className="w-full flex-col items-center bg-[#e1ebed]  ">
       <Navbar />
       <Banner />
       <Skill />

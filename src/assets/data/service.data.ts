@@ -1,10 +1,10 @@
 import { DiReact } from "react-icons/di";
 import { SiNestjs } from "react-icons/si";
 import { FaLaptopCode } from "react-icons/fa6";
+import { IServicePoint } from "../../components/Service";
 
-const ServicesData = [
+const ServicesData : IServicePoint[] = [
   {
-    category: "frontend",
     heading: "Frontend Development",
     icon: DiReact,
     points: [
@@ -16,7 +16,6 @@ const ServicesData = [
     ],
   },
   {
-    category: "backend",
     heading: "Backend Development",
     icon: SiNestjs,
     points: [
@@ -28,7 +27,6 @@ const ServicesData = [
     ],
   },
   {
-    category: "fullstack",
     heading: "Full Stack Development",
     icon: FaLaptopCode,
     points: [
