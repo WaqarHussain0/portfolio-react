@@ -23,7 +23,7 @@ const Footer = () => {
       <Row className=" px-4 md:px-0 py-2 md:py-4 w-full md:w-[90%] justify-center gap-4 items-center text-white  ">
         <Description
           title={`Copyright © Waqar Hussain | waqar.mernstackdev@gmail.com`}
-          className="line-clamp-2"
+          className="line-clamp-2 text-white"
         />
 
         <Row className=" justify-end items-center gap-2 ">

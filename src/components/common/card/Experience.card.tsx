@@ -44,7 +44,7 @@ const ExperienceCard: React.FC<IJob> = ({
                 href={websiteLink}
                 target="_blank"
                 rel="noreferrer"
-                className="line-clamp-1 poppinsRegular text-[11px] md:text-[16px]"
+                className="line-clamp-1 poppinsRegular text-[#211F20] text-[11px] md:text-[16px]"
               >
                 {companyName}
               </a>
@@ -52,10 +52,10 @@ const ExperienceCard: React.FC<IJob> = ({
               <AnimatedIcon
                 Icon={LuArrowUpRight}
                 animateIcon={false}
-                className="text-[#000000] w-[10px] h-[10px] md:w-[15px] md:h-[15px]"
+                className="text-black w-[10px] h-[10px] md:w-[15px] md:h-[15px]"
               />
             </Row>
-            
+
             <Description title={location} />
           </Row>
         </Row>
