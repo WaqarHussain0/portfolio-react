@@ -16,7 +16,7 @@ export interface ISkillData {
 const Skill = () => {
   return (
     <Row className="w-full justify-center items-center mt-4  bg-[#e1ebed]">
-      <Row className="px-2 md:px-0 w-full md:w-[93%] flex-col justify-between gap-4 items-center   ">
+      <Row className="px-2 md:px-0 w-[98%] md:w-[90%] flex-col justify-between gap-4 items-center   ">
         <Row className="items-center gap-3 text-[#291c3a]">
           <AnimatedIcon Icon={GrTechnology} />
 

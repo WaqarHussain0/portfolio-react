@@ -20,7 +20,7 @@ export interface IJob {
 
 const Experience: React.FC = () => {
   return (
-    <Row id="about" className="w-full md:w-[93%] justify-center  bg-[#e1ebed] ">
+    <Row id="about" className="w-[98%] md:w-[90%] justify-center  bg-[#e1ebed] ">
       <Row className="px-2 md:px-0 w-full flex-col justify-between items-center gap-4">
         <Row className="items-center gap-3 text-[#291c3a]">
           <AnimatedIcon Icon={ImOffice} />

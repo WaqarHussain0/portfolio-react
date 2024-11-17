@@ -58,12 +58,12 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <Row id="contact" className=" w-full justify-center mt-4 py-4 bg-[#fff] ">
+    <Row id="contact" className=" w-full justify-center mt-4 pt-3 pb-0 md:py-4 bg-[#fff] ">
       <ToastContainer
         className=" text-gray-800 rounded-lg  absolute right-32 top-20 px-4"
         autoClose={4000}
       />
-      <Row className="mb-4 px-2 md:px-0 w-full md:w-[93%] flex-col justify-between items-center  gap-4 ">
+      <Row className="mb-4 px-2 md:px-0 w-[98%] md:w-[90%] flex-col justify-between items-center  gap-4 ">
         <Row className=" items-center gap-3 text-[#291c3a]">
           <AnimatedIcon Icon={MdConnectWithoutContact} />
 

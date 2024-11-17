@@ -1,7 +1,9 @@
 import { IJob } from "../../Experience";
+import AnimatedIcon from "../AnimatedIcon";
 import Row from "../Row";
 import Description from "../heading/Description";
 import SubHeading from "../heading/SubHeading";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const ExperienceCard: React.FC<IJob> = ({
   designation,
@@ -37,15 +39,23 @@ const ExperienceCard: React.FC<IJob> = ({
           </Row>
 
           <Row className="justify-between items-center text-end">
-            <a
-              href={websiteLink}
-              target="_blank"
-              rel="noreferrer"
-              className="line-clamp-1 poppinsRegular text-[11px] md:text-[16px]"
-            >
-              {companyName}
-            </a>
+            <Row className="justify-between items-center text-end">
+              <a
+                href={websiteLink}
+                target="_blank"
+                rel="noreferrer"
+                className="line-clamp-1 poppinsRegular text-[11px] md:text-[16px]"
+              >
+                {companyName}
+              </a>
 
+              <AnimatedIcon
+                Icon={LuArrowUpRight}
+                animateIcon={false}
+                className="text-[#000000] w-[10px] h-[10px] md:w-[15px] md:h-[15px]"
+              />
+            </Row>
+            
             <Description title={location} />
           </Row>
         </Row>

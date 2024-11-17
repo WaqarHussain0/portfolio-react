@@ -16,7 +16,7 @@ export interface IServicePoint {
 const Service: React.FC = () => {
   return (
     <Row id="service" className="w-full justify-center mt-2  bg-[#e1ebed]">
-      <Row className="px-2 md:px-0 w-full md:w-[93%] flex-col justify-between items-center gap-4">
+      <Row className="px-2 md:px-0 w-[98%] md:w-[90%] flex-col justify-between items-center gap-4">
         <Row className="items-center gap-3 text-[#291c3a]">
           <AnimatedIcon Icon={PiDiamondsFourFill} />
 

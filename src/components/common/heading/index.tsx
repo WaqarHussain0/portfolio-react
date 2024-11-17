@@ -4,7 +4,7 @@ interface IHeading {
 
 const Heading: React.FC<IHeading> = ({ title }) => {
   return (
-    <h2 className="kenyanCoffee font-semibold uppercase text-[26px] md:text-[36px] border-b border-[#8121d0] text-start">
+    <h2 className="cotoris font-semibold capitalize text-[26px] md:text-[36px] border-b-2 border-[#8121d0] text-start">
       {title}
     </h2>
   );

@@ -10,7 +10,7 @@ const SkillCard: React.FC<ISkillData> = ({ name, icon: Icon }) => {
         className=" text-center text-[#291c3a] line-clamp-2"
       />
 
-      <Icon className="h-[25px] w-[25px]  md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] object-contain text-[#8121d0] " />
+      <Icon className="h-[25px] w-[25px]  md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] object-contain text-[#211F20] " />
     </Row>
   );
 };

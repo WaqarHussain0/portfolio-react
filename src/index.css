@@ -18,13 +18,7 @@
   font-family: poppins;
 }
 
-@font-face {
-  font-family: kenyanCoffee;
-  src: url(../src//assets//fonts/kenyan\ coffee\ rg.otf);
-}
-.kenyanCoffee {
-  font-family: kenyanCoffee;
-}
+
 
 @font-face {
   font-family: poppinsRegular;

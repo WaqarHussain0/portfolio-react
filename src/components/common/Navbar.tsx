@@ -18,7 +18,7 @@ const Navbar = () => {
       id="/"
       className="w-full justify-center items-center py-4 md:py-6 bg-[#291c3a]"
     >
-      <Row className="px-4 md:px-0 w-full md:w-[93%] justify-between md:justify-center md:gap-28 items-center">
+      <Row className="px-4 md:px-0 w-full md:w-[90%] justify-between md:justify-center md:gap-28 items-center">
         <Row className="gap-2 md:gap-6">
           {menu.map((item, index) => (
             <a

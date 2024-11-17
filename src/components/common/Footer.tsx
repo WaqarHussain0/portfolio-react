@@ -20,16 +20,10 @@ const data: ISocialLink[] = [
 const Footer = () => {
   return (
     <Row className="w-full justify-center  bg-[#291c3a]">
-      <Row className=" px-4 md:px-0 py-2 md:py-4 w-full md:w-[93%] justify-between items-center text-white  ">
-        <Row className="flex-col md:flex-row  md:items-center md:gap-2  ">
-          <a href="#/" className=" poppins text-[14px] md:text-[18px] ">
-            Waqar Hussain
-          </a>
-        </Row>
-
+      <Row className=" px-4 md:px-0 py-2 md:py-4 w-full md:w-[90%] justify-center gap-4 items-center text-white  ">
         <Description
-          title={`© ${new Date().getFullYear()}. All rights reserved.`}
-          className="hidden md:block"
+          title={`Copyright © Waqar Hussain | waqar.mernstackdev@gmail.com`}
+          className="line-clamp-2"
         />
 
         <Row className=" justify-end items-center gap-2 ">

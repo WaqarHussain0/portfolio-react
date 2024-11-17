@@ -6,7 +6,7 @@ import { IJob } from "../../components/Experience";
 const ExperienceData: IJob[] = [
   {
     designation: "Associate MERN Dev.",
-    companyName: "PieCyfer ↗",
+    companyName: "PieCyfer",
     location: "Lahore",
     startDate: "June 24",
     endDate: null,
@@ -15,7 +15,7 @@ const ExperienceData: IJob[] = [
   },
   {
     designation: "Intern MERN Stack Dev.",
-    companyName: "PieCyfer ↗",
+    companyName: "PieCyfer",
     location: "Lahore",
     startDate: "Mar",
     endDate: "May, 24",
@@ -24,7 +24,7 @@ const ExperienceData: IJob[] = [
   },
   {
     designation: "Junior React Dev.",
-    companyName: "66 Loop Technologies ↗",
+    companyName: "66 Loop Technologies",
     location: "Lahore",
     startDate: "Sep",
     endDate: "Oct, 23",
@@ -33,7 +33,7 @@ const ExperienceData: IJob[] = [
   },
   {
     designation: "MERN Bootcamp",
-    companyName: "Excellence Delivered Exd (Pvt.) Ltd ↗",
+    companyName: "Excellence Delivered Exd (Pvt.) Ltd",
     location: "Lahore",
     startDate: "2023",
     endDate: "2023",
